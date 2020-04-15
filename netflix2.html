@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>netflix 2</title>
+	<link rel="stylesheet" type="text/css" href="netflix2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewport" conteinitialnt="width=device-width, -scale=1.0">
+
+	<style >
+		
+*
+{
+	margin:auto 0;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+body
+{
+	background-color: black
+	width:100%;
+}
+
+ul
+{
+	/*border:1px solid white;*/
+}
+
+.head
+{
+	width:100%;
+	background-color: black;
+	/*border-bottom: 1px solid white */
+}
+
+.nav
+{
+	/*width:100%;*/
+	color:white;
+	display:flex;
+	/*grid-template-columns: 1fr 1fr 1fr 2fr 1fr;*/
+	list-style: none;
+	background-color:black; #E50914
+	/*border 2px solid white*/
+	border-bottom:1px solid white;
+	
+}
+
+.sticky
+{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	border-bottom: 1px solid white
+}
+
+li
+{
+	padding:1.2%;
+	transition: all 1s
+}
+
+li:hover
+{
+	background-color: #E50914;
+	color:black;
+	cursor: pointer;
+}
+
+
+.push
+{
+	background-color: black;
+	border:2px solid white;
+	border-radius: 10px;
+	color:white;
+	margin-left: 8%;
+	opacity: 0.8;
+	text-align: center;
+	transition: all 1s
+}
+
+.push:hover
+{
+	background-color: #E50914;
+	color:black;
+}
+
+.search
+{
+	padding-left: 5%
+}
+
+.sign
+{
+	padding-left: 25%;
+}
+
+.current
+{
+/*width:100%;*/
+	display:grid;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	color:white;
+	padding:5px;
+	border-top: 1px solid white;
+}
+
+.favourate
+{
+	/*width:100%;*/
+	font-family: 'Alfa Slab One', cursive;
+	color:white;
+	background-color: black;#E50914;
+	/*text-align: center;*/
+	padding:10px;
+	font-size: 50px;
+	border-top: 3px solid white
+}
+
+.jessica
+{
+	border-bottom: 3px solid #E50914;
+	border-width: 75%
+	transition:all 2s linear;
+}
+
+
+.jessica:hover
+{
+	box-shadow-bottom: 5px 5px 5px grey
+}
+.content
+{		
+	/*width:100%;*/
+	/*margin:100px;*/
+	display:grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	justify-content: space-around;
+	 background-image: linear-gradient(black,#E50914);
+}
+
+.show
+{ 
+	/*width:100%;*/
+	background-color:white;
+	padding:10px;
+	margin:10%;height:100%;width:50%
+	border-radius: 5px;
+	border:1px solid white;
+	box-shadow: 10px 10px 5px black;
+	transition: all .3s linear;
+	border-bottom: 3px solid red
+}
+
+.show:hover
+{
+	box-shadow:none;
+}
+
+.show > img
+{
+	/*width:100%;*/
+	border-radius: 5px;
+}
+
+/*.favourate
+{
+	background-color:  #E50914
+}*/
+
+footer
+{
+	color:#E50914;
+	text-align: center;
+	background-color: black;
+	font-family:  
+	/*width:100%;*/
+}
+
+.util
+{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-content: left;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.fix
+{
+	position: sticky;
+	bottom:0;
+	/*width: 100%;*/
+	background-color: white;
+	color:black
+}
+
+.li
+{
+	text-align: center;
+	/*margin: 50px;*/
+	padding:20px;
+}
+	</style>
+</head>
+<body>
+	<div class="head" style="width: 100%;">
+		<img src="https://cdn.vox-cdn.com/thumbor/AwKSiDyDnwy_qoVdLPyoRPUPo00=/39x0:3111x2048/1400x1400/filters:focal(39x0:3111x2048):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png" style="height: 120px;height:120px;border-left: 4px solid red;" >
+	</div>
+          
+    <nav class="sticky"> 
+		<ul class="nav">
+			<li><i class="fa fa-home" style="font-size: 60px;"></i></li>
+			<!-- <li style="font-size: 50px;">HOME</li> -->
+			<li style="font-size: 50px;">MOVIES</li>
+			<li style="font-size: 50px;">TV</li>
+			
+				<input type="text" name="" placeholder="SEARCH HERE!" class="push" style="width:40%;height:2.5em;">
+		
+			<li class="sign" style="font-size: 50px;">LOGOUT</li>
+		</ul>
+	</nav>
+
+	<div class="current">
+		<a href="https://www.youtube.com/watch?v=nWHUjuJ8zxE">	
+			<img src="https://storage.googleapis.com/cdn.spoilertv.com/images/headers/jessica-jones.jpg" class="jessica">
+		</a>
+		<div> Continue Watching....<br>S3 : E9 </div><br>
+		
+	</div>
+
+	<div class="favourate">Unlimited movies, TV <br> shows and more.</div>
+
+	<div class="content">
+
+		<div ><a href="https://www.youtube.com/watch?v=sEOuJ4z5aTc"><img src="https://mypostercollection.com/wp-content/uploads/2019/06/99-poster-1.jpg" style="height:100%;width:50%"sdsd class="show"></a></div>
+		<a href="https://www.youtube.com/watch?v=i1eJMig5Ik4"><img src="https://mypostercollection.com/wp-content/uploads/2020/01/bojack-horseman.jpg " style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=iH44Z0QwrWQ"><img src="https://mypostercollection.com/wp-content/uploads/2019/11/Titans-poster-1.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/results?search_query=mindhunter+trailer"><img src="https://img.reelgood.com/content/show/8cb33d82-836b-4ca2-b37f-b2c1df282086/poster-342.webp" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=Pws-LN_-riM"><img src="https://mypostercollection.com/wp-content/uploads/2018/03/13-reasons-why-poster-2-1024x1024.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=XcnHOQ-cHa0"><img src="https://mypostercollection.com/wp-content/uploads/2018/06/Stranger-Things-poster-eleven-691x1024.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=78ngg0SRlEI"><img src="https://mypostercollection.com/wp-content/uploads/2020/02/One-punch-man-poster.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=rrwycJ08PSA"><img src="https://i.pinimg.com/originals/67/5e/bc/675ebc2fd210a8bd5362928a51514960.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=3eqxXqJDmcY"><img src="https://i.pinimg.com/736x/81/24/e8/8124e8adbc5c9082e34f5c5c7bcf1c5e.jpg" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=xl8zdCY-abw"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSope_v5LJwJqG_RneywtB3fFwodW_j2uBRV6p_bzIfpeAGqllB&usqp=CAU" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=1JLUn2DFW4w"><img src="https://img.reelgood.com/content/show/f75762df-3e5b-4cd3-b621-32399a3dd20d/poster-342.webp" style="height:100%;width:50%" class="show"></a>
+		<a href="https://www.youtube.com/watch?v=Ruyl8_PT_y8"><img src="https://img.reelgood.com/content/show/a51d1ed5-3b87-4466-ae64-7379934703aa/poster-342.webp" style="height:100%;width:50%" class="show"></a>
+		
+	</div>
+
+	<div class="fix">
+		<ul class="util">
+			<div style="text-align: center;" title="new release"><li><i class="fa fa-tv" style="font-size: 50px;"></i></li></div>
+			<div style="text-align: center;" title="downloads"><li><i class="fa fa-download" style="font-size: 50px;padding:0px 10px 0px 10px;"></i></li></div>
+			<div style="text-align: center;" title="settings"><li><i class="fa fa-gear" style="font-size: 50px;"></i></li></div>			
+			<div style="text-align: center;" title="more"><li><i class="fa fa-bars" style="font-size: 50px;"></i></li></div>
+			<!-- <li>more</li> -->
+		</ul>
+	</div>
+
+	<footer>
+		© copyright 2020 
+
+	</footer>
+
+</body>
+</html>
