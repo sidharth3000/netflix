@@ -77,10 +77,9 @@ signup.addEventListener("click",function(){
 	obj.pass=creatpass.value;
 
 	ids.push(obj);
-	 console.log(ids[3]);
 
-	 // username.value="";
-	 // creatpass.value="";
+	 username.value="";
+	 creatpass.value="";
 
 	 alert("you have successfully signed up!")
 })
