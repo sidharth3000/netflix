@@ -1,7 +1,7 @@
 let ids = [
 	{
-		name:"s",
-		pass:"s"
+		name:"sidharth",
+		pass:"1234"
 	},
 	{
 		name:"chirag",
@@ -19,8 +19,6 @@ let login = document.getElementById("login");
 let email = document.getElementById("email");
 let password = document.getElementById("pass");
 
-// login.style.display="none";
-// login.style.background="black";
 
 login.addEventListener("click",function(){
 	for(let i=0;i<ids.length;i++)
@@ -36,7 +34,7 @@ login.addEventListener("click",function(){
 			n++;
 			if(n===ids.length-1)
 			{
-				alert("wrong");
+				alert("wrong id or password!");
 			}
 		}	
 	}
@@ -83,10 +81,3 @@ signup.addEventListener("click",function(){
 	 username.value="";
 	 creatpass.value="";
 })
-
-// obj = {name:"0",pass:"0"};
-// 	// obj.name=username.value;
-// 	// obj.pass=creatpass.value;
-
-// 	ids.push(obj);
-// console.log(ids[3]);
