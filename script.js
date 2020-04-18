@@ -32,8 +32,9 @@ login.addEventListener("click",function(){
         else if(email.value!==ids[i].name || password.value!==ids[i].pass)
 		{
 			n++;
-			if(n===ids.length-1)
+			if(n===ids.length)
 			{
+				n=0;
 				alert("wrong id or password!");
 			}
 		}	
@@ -80,4 +81,6 @@ signup.addEventListener("click",function(){
 
 	 username.value="";
 	 creatpass.value="";
+
+	 alert("you have successfully signed up!")
 })
